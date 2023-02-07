@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  /*color: #426696;*/
+  color: #4bfff5;
+  font-weight: 600;
+  font-size: 2rem;
+  opacity: 0.8;
+}
+
+h2 {
+  color: #4bfff5;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+p {
+  /*color: #658ec6;*/
+  color: #2c7a7a;
+  font-weight: 500;
+}
+
+h3 {
+  /*color: #426696;*/
+  color: #4bfff5;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(img/background.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.2)
+  );
+  border-radius: 2rem;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  z-index: 2;
+}
+
+.circle1,
+.circle2 {
+  background: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.2)
+  );
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 5%;
+  right: 15%;
+}
+.circle2 {
+  bottom: 7%;
+  left: 10%;
+}
+
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.link {
+  display: flex;
+  margin: 2rem 0rem;
+  padding: 1rem 5rem;
+  align-items: center;
+  color: #fff;
+}
+
+.link h2 {
+  padding: 0rem 1rem;
+}
+
+.link:first-child {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.link:nth-child(2) {
+  opacity: 0.4;
+}
+
+.link:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  opacity: 0.4;
+}
+
+.user img {
+  width: 100px;
+}
+
+.movies {
+  flex: 2;
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.status h1 {
+  display: flex;
+  align-items: center;
+}
+
+.status img {
+  margin-right: 1rem;
+}
+
+.gap {
+  background: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.3)
+  );
+  margin: 1rem 0 3rem 0;
+  height: 10px;
+  width: 393px;
+  filter: blur(3px);
+}
+
+.card {
+  display: flex;
+  background: linear-gradient(
+    to left top,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.35)
+  );
+  border-radius: 1rem;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.5);
+  justify-content: space-between;
+}
+
+.cards img {
+  border-radius: 1rem;
+}
