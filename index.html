@@ -18,61 +18,138 @@
     <section class="glass">
       <div class="dashboard">
         <div class="user">
-          <img src="img/avatar2.png" alt="" />
+          <img src="img/avatar2.png" id="avatar" alt="" />
           <h3>Filip Glišović</h3>
           <p>Pro Member</p>
         </div>
         <div class="links">
-          <div class="link">
+          <a onclick="clickSingleA(this)" href="#watching" class="link active">
             <img src="img/watching.png" alt="" />
             <h2>Currently Watching</h2>
-          </div>
-          <div class="link">
+          </a>
+          <a onclick="clickSingleA(this)" href="#upnext" class="link">
             <img src="img/next.png" alt="" />
             <h2>Up Next</h2>
-          </div>
-          <div class="link">
+          </a>
+          <a onclick="clickSingleA(this)" href="#watched" class="link">
             <img src="img/watched.png" alt="" />
             <h2>Watched</h2>
-          </div>
+          </a>
         </div>
       </div>
-      <div class="movies">
-        <div class="status">
-          <h1><img src="img/watching.png" alt="" />Currently Watching</h1>
-          <div class="gap"></div>
+
+      <section class="content">
+        <!--  Currently Watching  -->
+
+        <div class="watching" id="watching">
+          <div class="status">
+            <h1><img src="img/watching.png" alt="" />Currently Watching</h1>
+            <img src="img/sun.png" id="icon" />
+            <div class="gap" style="width: 395px;"></div>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <img src="img/got.png" alt="" />
+              <div class="card-info">
+                <h2>Game of Thrones</h2>
+                <p>HBO max</p>
+              </div>
+              <h2>S1 E3</h2>
+            </div>
+            <div class="card">
+              <img src="img/tlou.png" alt="" />
+              <div class="card-info">
+                <h2>The Last of Us</h2>
+                <p>HBO max</p>
+              </div>
+              <h2>S1 E2</h2>
+            </div>
+            <div class="card">
+              <img src="img/st.png" alt="" />
+              <div class="card-info">
+                <h2>Stranger Things</h2>
+                <p>Netflix</p>
+              </div>
+              <h2>S4 E2</h2>
+            </div>
+          </div>
         </div>
-        <div class="cards">
-          <div class="card">
-            <img src="img/got.png" alt="" />
-            <div class="card-info">
-              <h2>Game of Thrones</h2>
-              <p>HBO max</p>
-            </div>
-            <h2>S1 E3</h2>
+
+        <!--  Up Next  -->
+
+        <div class="upnext" id="upnext">
+          <div class="status">
+            <h1><img src="img/next.png" alt="" />Up Next</h1>
+            <div class="gap" style="width: 220px;"></div>
           </div>
-          <div class="card">
-            <img src="img/tlou.png" alt="" />
-            <div class="card-info">
-              <h2>The Last of Us</h2>
-              <p>HBO max</p>
+          <div class="cards">
+            <div class="card">
+              <img src="img/got.png" alt="" />
+              <div class="card-info">
+                <h2>Game of Thrones</h2>
+                <p>HBO max</p>
+              </div>
+              <h2>S1 E3</h2>
             </div>
-            <h2>S1 E2</h2>
-          </div>
-          <div class="card">
-            <img src="img/st.png" alt="" />
-            <div class="card-info">
-              <h2>Stranger Things</h2>
-              <p>Netflix</p>
+            <div class="card">
+              <img src="img/tlou.png" alt="" />
+              <div class="card-info">
+                <h2>The Last of Us</h2>
+                <p>HBO max</p>
+              </div>
+              <h2>S1 E2</h2>
             </div>
-            <h2>S4 E2</h2>
+            <div class="card">
+              <img src="img/st.png" alt="" />
+              <div class="card-info">
+                <h2>Stranger Things</h2>
+                <p>Netflix</p>
+              </div>
+              <h2>S4 E2</h2>
+            </div>
           </div>
         </div>
-      </div>
+
+        <!--  Watched  -->
+
+        <div class="watched" id="watched">
+          <div class="status">
+            <h1><img src="img/watched.png" alt="" />Watched</h1>
+            <div class="gap" style="width: 230px;"></div>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <img src="img/got.png" alt="" />
+              <div class="card-info">
+                <h2>Game of Thrones</h2>
+                <p>HBO max</p>
+              </div>
+              <h2>S1 E3</h2>
+            </div>
+            <div class="card">
+              <img src="img/tlou.png" alt="" />
+              <div class="card-info">
+                <h2>The Last of Us</h2>
+                <p>HBO max</p>
+              </div>
+              <h2>S1 E2</h2>
+            </div>
+            <div class="card">
+              <img src="img/st.png" alt="" />
+              <div class="card-info">
+                <h2>Stranger Things</h2>
+                <p>Netflix</p>
+              </div>
+              <h2>S4 E2</h2>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
   </main>
   <div class="circle1"></div>
   <div class="circle2"></div>
+  <script src="app.js"></script>
 </body>
 
 </html>
