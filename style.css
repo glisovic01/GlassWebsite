@@ -23,8 +23,8 @@
 }
 
 :root {
-  --pf-color: #fff;
-  --sf-color: #ccc;
+  --pf-color: #ffffff;
+  --sf-color: #b3b3b3;
 
   --bg-color: 0, 0, 0;
   --bg-url: url(img/darkback.jpeg);
@@ -36,8 +36,8 @@
 }
 
 .light-theme {
-  --pf-color: #111;
-  --sf-color: #888;
+  --pf-color: #111111;
+  --sf-color: #888888;
 
   --bg-color: 255, 255, 255;
   --bg-url: url(img/lightback.jpeg);
