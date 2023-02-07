@@ -5,10 +5,10 @@
 }
 
 ::-webkit-scrollbar {
-  width: 0.25rem;
+  display: none;
 }
 
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   background: rgba(var(--bg-color), 0);
   margin-block: 4rem;
 }
@@ -20,7 +20,7 @@
     rgba(var(--scroll-color), 0.4)
   );
   border-radius: 1rem;
-}
+} */
 
 :root {
   --pf-color: #fff;
