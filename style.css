@@ -189,7 +189,7 @@ main {
 }
 
 .watching {
-  margin: 2.5rem 5rem 5rem;
+  margin: 3rem 5rem 5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -219,7 +219,7 @@ main {
 }
 
 #upnext {
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 
 #watched {
