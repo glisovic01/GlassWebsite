@@ -23,8 +23,8 @@
 }
 
 :root {
-  --pf-color: #ffffff;
-  --sf-color: #808080;
+  --pf-color: #fff;
+  --sf-color: #ccc;
 
   --bg-color: 0, 0, 0;
   --bg-url: url(img/darkback.jpeg);
@@ -36,8 +36,8 @@
 }
 
 .light-theme {
-  --pf-color: #111111;
-  --sf-color: #888888;
+  --pf-color: #111;
+  --sf-color: #888;
 
   --bg-color: 255, 255, 255;
   --bg-url: url(img/lightback.jpeg);
@@ -72,12 +72,13 @@ h2 {
 p {
   color: var(--sf-color);
   font-weight: 500;
+  opacity: 0.8;
 }
 
 h3 {
   color: var(--pf-color);
   font-weight: 600;
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 main {
