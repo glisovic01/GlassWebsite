@@ -161,6 +161,10 @@ main {
   margin-bottom: 0;
 }
 
+.user {
+  text-decoration: none;
+}
+
 .user img {
   width: 100px;
 }
