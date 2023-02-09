@@ -1,3 +1,40 @@
+/*  active dashboard link  */
+
+function clickSingleA(a) {
+  items = document.querySelectorAll(".link.active");
+  if (items.length) {
+    items[0].className = "link";
+  }
+  a.className = "link active";
+}
+
+function showDiv1() {
+  document.getElementById("watching").style.cssText =
+    "visibility: visible; opacity: 1";
+  document.getElementById("upnext").style.cssText =
+    "visibility: hidden; opacity: 0";
+  document.getElementById("watched").style.cssText =
+    "visibility: hidden; opacity: 0";
+}
+
+function showDiv2() {
+  document.getElementById("watching").style.cssText =
+    "visibility: hidden; opacity: 0";
+  document.getElementById("upnext").style.cssText =
+    "visibility: visible; opacity: 1";
+  document.getElementById("watched").style.cssText =
+    "visibility: hidden; opacity: 0";
+}
+
+function showDiv3() {
+  document.getElementById("watching").style.cssText =
+    "visibility: hidden; opacity: 0";
+  document.getElementById("upnext").style.cssText =
+    "visibility: hidden; opacity: 0";
+  document.getElementById("watched").style.cssText =
+    "visibility: visible; opacity: 1";
+}
+
 /*  light/dark theme  */
 
 var icon = document.getElementById("icon");
@@ -26,13 +63,3 @@ icon.onclick = function () {
     localStorage.setItem("theme", "dark");
   }
 };
-
-/*  active dashboard link  */
-
-function clickSingleA(a) {
-  items = document.querySelectorAll(".link.active");
-  if (items.length) {
-    items[0].className = "link";
-  }
-  a.className = "link active";
-}
