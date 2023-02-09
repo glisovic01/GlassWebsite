@@ -248,7 +248,6 @@ main {
   text-decoration: none;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, var(--shadow-opacity));
   justify-content: space-between;
-  cursor: pointer;
 }
 
 .cards img {
